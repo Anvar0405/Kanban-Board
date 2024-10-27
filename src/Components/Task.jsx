@@ -7,7 +7,7 @@ export default function Task({ task = {}, index, taskList, setTaskList }) {
   // eslint-disable-next-line no-unused-vars
   const [{ isDragging }, drag] = useDrag({
     type: "TASK",
-    item: { index, task: { ...task } }, // Ensure you spread the task object
+    item: { index, task: { ...task } },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),
