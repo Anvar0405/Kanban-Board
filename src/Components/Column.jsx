@@ -2,6 +2,7 @@ import React from "react";
 import { useDrop } from "react-dnd";
 
 export default function Column({ children, taskList, setTaskList }) {
+  // eslint-disable-next-line no-unused-vars
   const [{ isOver }, drop] = useDrop({
     accept: "TASK",
     drop: (item) => {
