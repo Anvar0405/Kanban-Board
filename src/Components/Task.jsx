@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import { UserContext } from "../Context/userContext";
 import EditTask from "./EditTask";
 import { useDrag } from "react-dnd";
-import { useEffect } from "react";
 
 export default function Task({ task = {}, index, taskList, setTaskList }) {
   const [{ isDragging }, drag] = useDrag({

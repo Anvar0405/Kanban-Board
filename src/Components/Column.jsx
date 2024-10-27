@@ -6,7 +6,6 @@ export default function Column({ children, taskList, setTaskList }) {
     accept: "TASK",
     drop: (item) => {
       const draggedTask = item.task;
-      const draggedIndex = item.index;
 
       setTaskList((prevTasks) => {
         const updatedTasks = [...prevTasks];
